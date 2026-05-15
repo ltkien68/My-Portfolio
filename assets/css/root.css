@@ -1,0 +1,63 @@
+/* root.css - Biến màu sắc và font chữ ClickHouse */
+:root {
+  /* Colors – dark only */
+  --colors-primary: #FF8C42;
+  --colors-primary-active: #e6eb52;
+  --colors-primary-disabled: #3a3a1f;
+  --colors-ink: #ffffff;
+  --colors-body: #cccccc;
+  --colors-body-strong: #e6e6e6;
+  --colors-muted: #888888;
+  --colors-muted-soft: #5a5a5a;
+  --colors-hairline: #2a2a2a;
+  --colors-hairline-strong: #3a3a3a;
+  --colors-canvas: #0a0a0a;
+  --colors-surface-soft: #121212;
+  --colors-surface-card: #1a1a1a;
+  --colors-surface-elevated: #242424;
+  --colors-surface-yellow-band: #faff69;
+  --colors-on-primary: #0a0a0a;
+  --colors-on-dark: #ffffff;
+  --colors-on-yellow: #0a0a0a;
+  --colors-accent-emerald: #22c55e;
+  --colors-accent-rose: #ef4444;
+  --colors-accent-blue: #3b82f6;
+
+  /* Typography */
+  --typography-display-xl: 72px;
+  --typography-display-lg: 56px;
+  --typography-display-md: 40px;
+  --typography-display-sm: 32px;
+  --typography-title-lg: 24px;
+  --typography-title-md: 18px;
+  --typography-title-sm: 16px;
+  --typography-stat-display: 56px;
+  --typography-body-md: 16px;
+  --typography-body-sm: 14px;
+  --typography-caption: 13px;
+  --typography-caption-uppercase: 12px;
+  --typography-code: 14px;
+  --typography-button: 14px;
+  --typography-nav-link: 14px;
+
+  /* Spacing (base 4px) */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 96px;
+
+  /* Border radius */
+  --rounded-xs: 4px;
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 12px;
+  --rounded-pill: 9999px;
+  --rounded-full: 9999px;
+
+  /* Container */
+  --container-max-width: 1280px;
+}

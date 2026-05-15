@@ -1,250 +1,165 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Lê Trung Kiên</title>
-
-    <!-- Link các file CSS biến và font (đường dẫn tương đối) -->
-    <link rel="stylesheet" href="./assets/css/variable.css" />
-    <link rel="stylesheet" href="./assets/css/theme.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/button.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/hero.css" />
-    <link rel="stylesheet" href="./assets/css/project.css" />
-    <link rel="stylesheet" href="./assets/css/about.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-
-    <style>
-
-      @media (max-width: 768px) {
-        .hero__container {
-          flex-direction: column-reverse;
-          text-align: center;
-        }
-        .hero__buttons {
-          justify-content: center;
-        }
-        .section__title::after {
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        .section__title {
-          text-align: center;
-          display: block;
-        }
-        .nav__list {
-          gap: var(--space-2);
-        }
-        .hero__name {
-          font-size: var(--text-4xl);
-        }
-      }
-    </style>
+    <title>Portfolio | ClickHouse Style</title>
+    <!-- Font Inter + JetBrains Mono -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 6 (free icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/stlye.css" />
   </head>
   <body>
-    <!-- ================= HEADER (BEM) ================= -->
+    <!-- ================= HEADER + NAV ================= -->
     <header class="header">
-      <div class="container header__container">
-        <div class="logo">LK Portfolio</div>
+      <div class="header__container">
+        <div class="logo">My<span class="logo__accent">Portfolio</span></div>
         <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="#home" class="nav__link">Home</a></li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#projects" class="nav__link">Projects</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
+          <a href="#skills" class="nav__link">Kỹ năng</a>
+
+          <a href="#projects" class="nav__link">Dự án</a>
+          <a href="#about" class="nav__link">Giới thiệu</a>
+          <a href="#contact" class="nav__link">Liên hệ</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <!-- ================= HERO SECTION ================= -->
-      <section id="home" class="hero">
-        <div class="container hero__container">
-          <div class="hero__content">
-            <div class="hero__badge">Welcome to my world</div>
-            <h1 class="hero__name">Lê Trung Kiên</h1>
-            <div class="hero__title">Frontend Developer & UI Enthusiast</div>
-            <p class="hero__description">
-              Tôi đam mê xây dựng những giao diện đẹp, hiệu năng cao và trải
-              nghiệm người dùng mượt mà. Hiện đang tập trung vào React, Node.js
-              và thiết kế hệ thống CSS hiện đại.
+    <!-- ================= BANNER TO – VIDEO NỀN ================= -->
+    <section class="banner">
+      <!-- Video mẫu từ Pexels (có thể thay bằng link video của bạn) -->
+      <video class="banner__video" autoplay muted loop playsinline>
+        <source src="./assets/videos/banner.mp4" type="video/mp4" />
+      </video>
+      <div class="banner__overlay">
+        <div class="banner__greeting">Xin chào</div>
+        <h1 class="banner__name">
+          Tôi là
+          <span
+            style="
+              background: linear-gradient(135deg, #92fe9d, #ffffff);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >Lê Trung Kiên</span
+          >
+        </h1>
+        <div class="banner__buttons">
+          <a href="#projects" class="button-primary">DỰ ÁN</a>
+          <a href="#about" class="button-secondary">THÔNG TIN</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GIỚI THIỆU (ABOUT) ================= -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about__content">
+          <div class="caption-uppercase">Về tôi</div>
+          <h2>
+            Sinh viên ngành
+            <span style="color: var(--colors-primary)"
+              >Mạng máy tính & Truyền thông dữ liệu</span
+            >
+          </h2>
+          <div class="about__text body-md">
+            <p>
+              Tôi là sinh viên ngành
+              <span style="color: var(--colors-primary)"
+                >Mạng máy tính và Truyền thông dữ liệu</span
+              >
+              của trường
+              <span style="color: var(--colors-primary)"
+                >Đại học Kinh tế - Kỹ thuật Công nghiệp</span
+              >, chuyên ngành
+              <span style="color: var(--colors-primary)"
+                >Hệ thống nhúng và Iot</span
+              >.
             </p>
-            <div class="hero__buttons">
-              <a href="#projects" class="btn btn--primary">Xem dự án</a>
-              <a href="#contact" class="btn btn--outline">Liên hệ</a>
-            </div>
-          </div>
-          <div class="hero__avatar">
-            <!-- Ảnh đại diện placeholder (bạn có thể thay đường dẫn thật) -->
-            <img
-              src="https://via.placeholder.com/320x320?text=Avatar"
-              alt="Lê Trung Kiên"
-            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ================= ABOUT SECTION ================= -->
-      <section id="about" class="about">
-        <div class="container">
-          <h2 class="section__title">Về tôi</h2>
-          <div class="about__content">
-            <div class="about__text">
-              <p>
-                Xin chào! Tôi là Kiên, một lập trình viên frontend với hơn 2 năm
-                kinh nghiệm xây dựng các ứng dụng web responsive. Tôi thích làm
-                việc với React, Tailwind, và hiện tại đang tìm hiểu sâu về
-                Node.js để trở thành full-stack.
-              </p>
-              <p>
-                Ngoài lập trình, tôi đam mê bóng đá, thiết kế đồ họa và khám phá
-                các công nghệ mới. Tôi tin rằng code không chỉ là công cụ mà còn
-                là nghệ thuật.
-              </p>
-            </div>
-            <div class="about__info">
-              <div class="info-item">
-                <span class="info-item__label">Tên:</span>
-                <span class="info-item__value">Lê Trung Kiên</span>
-              </div>
-              <div class="info-item">
-                <span class="info-item__label">Email:</span>
-                <span class="info-item__value">kien.le@example.com</span>
-              </div>
-              <div class="info-item">
-                <span class="info-item__label">Vị trí:</span>
-                <span class="info-item__value">Hà Nội, Việt Nam</span>
-              </div>
-              <div class="info-item">
-                <span class="info-item__label">Freelance:</span>
-                <span class="info-item__value">Có sẵn</span>
-              </div>
-            </div>
-          </div>
+    <!-- ================= KỸ NĂNG – VÒNG TRÒN XOAY (SAO THỔ) ================= -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="skill__title">
+          <div class="caption-uppercase">Kỹ năng</div>
+          <h2>Công nghệ tôi sử dụng</h2>
         </div>
-      </section>
+        <div class="skill-sphere" id="skillSphere">
+          <!-- Các icon sẽ được tạo bằng JavaScript để dễ dàng thêm/sửa -->
+        </div>
+        <div
+          class="body-sm"
+          style="text-align: center; margin-top: var(--spacing-xl)"
+        >
 
-      <!-- ================= PROJECTS SECTION (BEM) ================= -->
-      <section id="projects" class="projects">
-        <div class="container">
-          <h2 class="section__title">Dự án tiêu biểu</h2>
-          <div class="projects__grid">
-            <!-- Card 1 -->
-            <div class="project-card">
-              <div class="project-card__image">🎨</div>
-              <div class="project-card__content">
-                <h3 class="project-card__title">Portfolio cá nhân</h3>
-                <p>
-                  Trang web portfolio sử dụng HTML/CSS thuần và BEM, tối ưu hiệu
-                  suất.
-                </p>
-                <div class="project-card__tech">
-                  <span class="tech-tag">HTML5</span>
-                  <span class="tech-tag">CSS3</span>
-                  <span class="tech-tag">BEM</span>
-                </div>
-                <a href="#" class="project-card__link">Live Demo →</a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="project-card">
-              <div class="project-card__image">⚛️</div>
-              <div class="project-card__content">
-                <h3 class="project-card__title">Weather App</h3>
-                <p>Ứng dụng thời tiết với React và OpenWeatherMap API.</p>
-                <div class="project-card__tech">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Axios</span>
-                  <span class="tech-tag">API</span>
-                </div>
-                <a href="#" class="project-card__link">Live Demo →</a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="project-card">
-              <div class="project-card__image">📝</div>
-              <div class="project-card__content">
-                <h3 class="project-card__title">Task Manager</h3>
-                <p>Quản lý công việc với Node.js, Express và MongoDB.</p>
-                <div class="project-card__tech">
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">MongoDB</span>
-                </div>
-                <a href="#" class="project-card__link">Live Demo →</a>
-              </div>
-            </div>
-          </div>
+        <div class="skill-list">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">NodeJS</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">C++</div>
         </div>
-      </section>
+      </div>
 
-      <!-- ================= CONTACT SECTION ================= -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <h2 class="section__title">Liên hệ với tôi</h2>
-          <div class="contact__container">
-            <div class="contact__info">
-              <p class="contact__text">
-                Bạn có dự án muốn hợp tác? Hay chỉ đơn giản là muốn nói chuyện?
-                Hãy gửi tin nhắn, tôi sẽ phản hồi sớm nhất có thể.
-              </p>
-              <div class="contact__details">
-                <div class="contact__detail-item">📧 kien.le@example.com</div>
-                <div class="contact__detail-item">📞 +84 123 456 789</div>
-                <div class="contact__detail-item">📍 Hà Nội, Việt Nam</div>
-              </div>
-            </div>
-            <div class="contact__form">
-              <form action="#" method="post">
-                <div class="form-group">
-                  <input type="text" placeholder="Họ tên" required />
-                </div>
-                <div class="form-group">
-                  <input type="email" placeholder="Email" required />
-                </div>
-                <div class="form-group">
-                  <textarea placeholder="Nội dung tin nhắn..."></textarea>
-                </div>
-                <button type="submit" class="btn btn--gold">
-                  Gửi tin nhắn
-                </button>
-              </form>
-            </div>
-          </div>
+      
+    </section>
+
+    <!-- ================= DỰ ÁN (MY PROJECTS) – CARD NGANG ================= -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="caption-uppercase">Dự án nổi bật</div>
+        <h2>Những sản phẩm đã thực hiện</h2>
+        <div class="projects__list" id="projectsList">
+          <!-- Các card project sẽ được tạo bằng JS để dễ quản lý, nhưng tôi có thể viết mẫu sẵn -->
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- ================= LIÊN HỆ (CONTACT) – FORM ================= -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="caption-uppercase">Liên hệ</div>
+        <h2>Hãy nói với tôi điều gì đó</h2>
+        <div class="contact__form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="email" placeholder="Email của bạn" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Nội dung tin nhắn..." required></textarea>
+            </div>
+            <div class="contact__submit">
+              <button type="submit" class="button-primary">Gửi tin nhắn</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__social">
-          <a href="#">GitHub</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
+        <div class="footer__text">
+          © 2025 - Portfolio cá nhân. Thiết kế theo phong cách ClickHouse.
         </div>
-        <p>
-          © 2025 Lê Trung Kiên. Built with
-          <span style="color: var(--color-red)">❤️</span> and CSS variables.
-        </p>
       </div>
     </footer>
 
-    <!-- (Tuỳ chọn) Smooth scroll cho các link neo -->
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-    </script>
+    <script src="./assets/scripts/animation.js"></script>
   </body>
 </html>
