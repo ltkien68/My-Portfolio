@@ -1,0 +1,120 @@
+.section {
+                padding: 100px 48px;
+            }
+            .section-label {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+                font-size: 11px;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+                color: var(--text3);
+                margin-bottom: 16px;
+            }
+            .section-title {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 800;
+                font-size: clamp(32px, 4vw, 52px);
+                text-transform: uppercase;
+                line-height: 1;
+                color: var(--btn-text);
+                margin-bottom: 20px;
+            }
+            .section-title em {
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+                font-weight: 700;
+                text-transform: none;
+            }
+
+            .skills-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: start;
+            }
+            .skills-desc {
+                font-size: 15px;
+                color: var(--text3);
+                line-height: 1.7;
+                margin-bottom: 32px;
+            }
+
+            .skill-bars {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .skill-row {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .skill-meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .skill-name {
+                font-size: 12px;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                color: var(--text2);
+            }
+            .skill-pct {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 800;
+                font-size: 28px;
+                color: var(--btn-text);
+            }
+            .skill-bar-bg {
+                height: 3px;
+                background: rgba(88,74,57,.2);
+                border-radius: 2px;
+                overflow: hidden;
+            }
+            .skill-bar-fill {
+                height: 100%;
+                background: var(--btn-text);
+                border-radius: 2px;
+                transform-origin: left;
+                animation: fillBar 1.2s ease forwards;
+                animation-play-state: paused;
+            }
+            .skill-bar-fill.animated {
+                animation-play-state: running;
+            }
+            @keyframes fillBar {
+                from {
+                    transform: scaleX(0);
+                }
+                to {
+                    transform: scaleX(1);
+                }
+            }
+
+            .skills-stats {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1px;
+                background: rgba(88,74,57,.15);
+                border: 1px solid rgba(88,74,57,.15);
+            }
+            .stat-box {
+                padding: 28px 24px;
+                background: var(--bg);
+                border-bottom: 1px solid rgba(88,74,57,.15);
+            }
+            .stat-num {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 800;
+                font-size: 42px;
+                color: var(--btn-text);
+                line-height: 1;
+            }
+            .stat-label {
+                font-size: 11px;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                color: var(--text3);
+                margin-top: 4px;
+            }
