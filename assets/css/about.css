@@ -1,0 +1,33 @@
+.about {
+  padding: var(--space-8) 0;
+  background: var(--color-white);
+}
+.about__content {
+  display: flex;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+.about__text {
+  flex: 1;
+}
+.about__text p {
+  margin-bottom: var(--space-3);
+}
+.about__info {
+  flex: 0.8;
+  background: var(--color-gray-100);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+}
+.info-item {
+  display: flex;
+  margin-bottom: var(--space-3);
+}
+.info-item__label {
+  font-weight: var(--fw-bold);
+  width: 100px;
+  color: var(--color-black);
+}
+.info-item__value {
+  color: var(--color-gray-600);
+}

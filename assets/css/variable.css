@@ -1,0 +1,76 @@
+:root {
+  --color-white: #ffffff;
+  --color-off-white: #f7f7f7;
+
+  --color-black: #0b0b0b;
+  --color-black-soft: #171717;
+
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e5e5;
+  --color-gray-400: #9ca3af;
+  --color-gray-600: #6b7280;
+  --color-gray-800: #1f1f1f;
+
+  --color-red: #e11d48;
+  --color-red-hover: #be123c;
+  --color-red-soft: #fff1f2;
+
+  --color-gold: #ffd700;
+  --color-green: #18a957;
+
+  --overlay-white-strong: rgba(255, 255, 255, 0.97);
+  --overlay-white-soft: rgba(255, 255, 255, 0.55);
+
+  --font-body: "Juventus Body", sans-serif;
+  --font-body-2: "Michroma", sans-serif;
+  --font-heading: "Juventus Heading", sans-serif;
+  --font-display: "Juventus Display", sans-serif;
+  --font-light: "Juventus Fans Light", sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
+  --text-5xl: 64px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  --space-9: 128px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  --container-width: 1320px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  --toast-success: #16a34a;
+  --toast-error: #dc2626;
+  --toast-warning: #f59e0b;
+  --toast-info: #2563eb;
+
+  --toast-bg: #111827;
+  --toast-text: #ffffff;
+  --toast-radius: 14px;
+  --toast-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
