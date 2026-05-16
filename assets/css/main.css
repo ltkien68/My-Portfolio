@@ -1,6 +1,7 @@
 @import "theme.css";
 @import "./sections/header.css";
 @import "./sections/hero.css";
+@import "./sections/about.css";
 
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);
   letter-spacing: var(--p-letter-spacing);
-  font-family: "Chakra Petch", sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -22,7 +23,17 @@
 }
 
 body {
+  /* background-color: var(--bg-main); */
   background-color: var(--bg-main);
+
+  background-size: 9px 9px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08) 0,
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px,
+    transparent 40%
+  );
   color: var(--text-main);
 }
 

@@ -139,6 +139,10 @@ table {
   /* Text color */
   --text-heading: hsl(0, 0%, 100%);
   --text-main: hsl(214, 24%, 81%);
+  --text-banner: (
+    background: linear-gradient(to right, hsl(200, 96%, 51%), hsl(0, 0%, 100%))
+      ; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  );
 
   /* Text hovered color */
   --text-hovered: hsl(198, 96%, 51%);
@@ -165,4 +169,13 @@ table {
 
   /* Colors – dark only */
   --p-font-size: 16px;
+
+  /* fonts */
+  --font-body: "Darley";
+  --font-heading: "Be Vietnam Pro";
+}
+
+@font-face {
+  font-family: "Darley";
+  src: url("../fonts/Darley/DarleySans-Regular.otf");
 }
