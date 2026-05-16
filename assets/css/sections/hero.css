@@ -45,6 +45,12 @@
   z-index: 2;
 }
 
+.hero__text p {
+  color: var(--text-heading);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
 .hero__text h1 {
   font-size: 90px;
   font-family: var(--font-heading);
