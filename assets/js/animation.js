@@ -74,16 +74,3 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
-
-/*  gui email  */
-function sendMail(e) {
-  e.preventDefault();
-
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  const subject = encodeURIComponent("Liên hệ từ website");
-  const body = encodeURIComponent(`Email: ${email}\n\nNội dung:\n${message}`);
-
-  window.location.href = `mailto:ltkien.aug6@gmail.com?subject=${subject}&body=${body}`;
-}

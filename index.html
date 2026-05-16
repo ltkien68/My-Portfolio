@@ -227,7 +227,7 @@
             class="projects__container_list_pj tilt-card"
           >
             <div class="projects__container_list_pj_img">
-              <img src="./assets/images/web1.png" alt="doan1.png" />
+              <img src="./assets/images/web2.png" alt="doan2.png" />
             </div>
             <div class="projects__container_list_pj_content">
               <p>Dự án 2</p>
@@ -236,6 +236,29 @@
               </h3>
             </div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="connect hidden">
+      <div class="connect__container">
+        <h1>Kết nối với mình</h1>
+
+        <div class="connect__container_form">
+          <form onsubmit="sendMail(event)">
+            <p class="connect__container_form_label">Email của bạn:</p>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email người gửi"
+              required
+            />
+            <p class="connect__container_form_label">
+              Nội dung bạn muốn trao đổi với mình:
+            </p>
+            <textarea id="message" placeholder="Nội dung" required></textarea>
+            <button type="submit">Gửi</button>
+          </form>
         </div>
       </div>
     </section>

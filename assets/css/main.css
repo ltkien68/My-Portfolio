@@ -5,6 +5,8 @@
 @import "./sections/skills.css";
 @import "./sections/projects.css";
 @import "./sections/footer.css";
+@import "./sections/connect.css";
+
 
 * {
   box-sizing: border-box;
