@@ -2,14 +2,28 @@ header {
   position: fixed;
 
   width: 100%;
-  margin-top: 20px;
-  z-index: 10;
+  z-index: 20;
+
+  /* Mặc định trong suốt */
+  background: transparent;
+
+  /* Transition mượt khi đổi màu */
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &.scrolled {
+    background: rgba(10, 10, 30, 0.95); /* Màu nền tối + trong suốt nhẹ */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0px;
 
   width: 100%;
 }

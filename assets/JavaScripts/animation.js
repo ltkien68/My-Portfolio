@@ -60,3 +60,17 @@ document.querySelectorAll(".tilt-card").forEach((card) => {
     // Không cần reset --mouse-x/y vì shine đã ẩn
   });
 });
+
+/*  hieu ung doi mau header  */
+const header = document.getElementById("header");
+const hero = document.querySelector(".hero");
+
+window.addEventListener("scroll", () => {
+  const heroHeight = hero.offsetHeight;
+
+  if (window.scrollY > heroHeight) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
