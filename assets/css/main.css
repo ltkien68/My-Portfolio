@@ -2,6 +2,7 @@
 @import "./sections/header.css";
 @import "./sections/hero.css";
 @import "./sections/about.css";
+@import "./sections/skills.css";
 
 * {
   box-sizing: border-box;

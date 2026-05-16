@@ -1,0 +1,129 @@
+.skills {
+  margin: 150px 200px;
+}
+
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.skill__container h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+
+  color: var(--text-heading);
+}
+
+.skill__description {
+  margin: 0 150px;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.skill__tools {
+  border: 1px solid hsl(200, 96%, 51%);
+  background: linear-gradient(
+    135deg,
+    hsla(198, 96%, 51%, 0.12),
+    rgba(10, 20, 40, 0.1)
+  );
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill__tools h3 svg {
+  color: var(--text-hovered);
+}
+
+.skill__tools h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-heading);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  margin-top: 10px;
+}
+
+.skill__tools_list {
+  margin-top: 10px;
+  width: 900px;
+  max-width: 100%;
+
+  overflow: hidden;
+}
+
+.skill_tools_list_track {
+  display: flex;
+  gap: 10px;
+
+  cursor: pointer;
+  width: max-content;
+  animation: scroll-tools 20s linear infinite;
+}
+
+.skill__tools_list_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 30px;
+
+  border: 1px solid hsl(200, 96%, 51%);
+  background: hsla(200, 96%, 51%, 0.12);
+  border-radius: 12px;
+  gap: 10px;
+}
+
+.skill__tools_list_icon img {
+  width: 30px;
+  height: auto;
+
+  filter: brightness(0) invert(1);
+}
+
+.skill__tools_list_icon_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 30px;
+
+  border: 1px solid hsl(200, 80%, 84%);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  gap: 10px;
+}
+
+.skill__tools_list_icon_2 img {
+  width: 30px;
+  height: auto;
+
+  filter: brightness(0) invert(1);
+}
+
+.skill__tools_list_icon,
+.skill__tools_list_icon_2 {
+  flex: 0 0 auto;
+}
+
+/*  animation loop cho skill tools list  */
+@keyframes scroll-tools {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.skill__tools_list:hover .skill_tools_list_track {
+  animation-play-state: paused;
+}
