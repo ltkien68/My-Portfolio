@@ -1,0 +1,50 @@
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+.hero__container video {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+  position: absolute;
+  inset: 0; /* thay thế cho top/bottom/left/right */
+}
+
+.hero__container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero__container--text {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  z-index: 2;
+}
+
+.hero__container--text h1 {
+  font-size: var(--h1-font-size);
+}
