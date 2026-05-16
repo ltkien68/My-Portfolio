@@ -23,6 +23,7 @@ header {
   color: var(--text-heading);
   font-size: var(--h3-font-size);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .header__left--icon {

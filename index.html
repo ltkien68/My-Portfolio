@@ -27,19 +27,19 @@
     <header>
       <div class="container header__container">
         <!-- left header -->
-        <div class="header__left">
+        <a href="/" class="header__left">
           <img
             class="header__left--icon"
             src="./assets/images/lk_logo_white.png"
             alt="logo_lk.png"
           />
           <p class="header__left--text">Trung Kien</p>
-        </div>
+        </a>
 
         <!-- right header -->
         <div class="header__right">
           <ul>
-            <a href="#about">Về tôi</a>
+            <a href="#about">Về mình</a>
             <a href="#skills">Kỹ năng</a>
             <a href="#projects">Dự án</a>
             <a href="#connect">Kết nối</a>
@@ -56,19 +56,19 @@
 
         <div class="hero__text">
           <p>Xin chào, mình là</p>
-          <h1>Lê Trung Kiên</h1>
+          <h1 id="title"></h1>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about hidden">
       <div class="about__container">
         <h1>Về mình</h1>
         <div class="about__data">
           <ul>
             <p>
-              Mình là sinh viên ngành Mạng máy tính & Truyền thông dữ liệu tại Trường
-              Đại học Kinh tế - Kỹ thuật Công nghiệp.
+              Mình là sinh viên ngành Mạng máy tính & Truyền thông dữ liệu tại
+              Trường Đại học Kinh tế - Kỹ thuật Công nghiệp.
             </p>
             <p>
               Mình yêu thích công nghệ và có đam mê với lập trình, hệ thống
@@ -78,9 +78,23 @@
               Email:
               <a href="mailto:ltkien.aug6@gmail.com">ltkien.aug6@gmail.com</a>
             </h3>
+            <div class="about__icon">
+              <a href="https://github.com/ltkien68">
+                <img
+                  src="/assets/images/github_logo.png"
+                  alt="github_logo.png"
+                />
+              </a>
+              <a href="https://www.facebook.com/ltk6805">
+                <img src="/assets/images/fb_logo.png" alt="fb_logo.png" />
+              </a>
+              <a></a>
+            </div>
           </ul>
         </div>
       </div>
     </section>
+
+    <script src="./assets/JavaScripts/animation.js"></script>
   </body>
 </html>
