@@ -15,6 +15,7 @@
   line-height: var(--h1-line-height);
 
   color: var(--text-heading);
+  margin-bottom: 10px;
 }
 
 .about__data {

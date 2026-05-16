@@ -3,6 +3,8 @@
 @import "./sections/hero.css";
 @import "./sections/about.css";
 @import "./sections/skills.css";
+@import "./sections/projects.css";
+@import "./sections/footer.css";
 
 * {
   box-sizing: border-box;

@@ -20,6 +20,8 @@
   margin: 0 150px;
   color: var(--text-main);
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .skill__tools {

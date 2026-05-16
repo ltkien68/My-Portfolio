@@ -9,6 +9,14 @@
   height: 100vh;
 
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
 }
 
 .hero__container video {
@@ -19,14 +27,6 @@
 
   position: absolute;
   inset: 0; /* thay thế cho top/bottom/left/right */
-}
-
-.hero__container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
 }
 
 .hero__text {
