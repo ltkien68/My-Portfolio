@@ -55,8 +55,28 @@
         </video>
 
         <div class="hero__text">
-          <p>Xin chào, mình là</p>
+          <div class="hero__text-header">
+            <ul>
+              <li style="color: #00e5ff">IoT</li>
+              <li>Fullstack</li>
+              <li style="color: #00ff88">Engineer</li>
+            </ul>
+            <p>
+              <span style="font-family: &quot;Fluggles&quot;; font-size: 200px"
+                >Xin chào</span
+              >
+              mình là
+            </p>
+          </div>
           <h1 id="title"></h1>
+          <span style="font-size: 16px; margin-top: -20px">
+            Firmware · Web Dashboard · Real-time</span
+          >
+
+          <div class="header__button">
+            <a href="">Tải CV</a>
+            <a href="#connect">Liên hệ</a>
+          </div>
         </div>
       </div>
     </section>
@@ -64,33 +84,49 @@
     <section id="about" class="about hidden">
       <div class="about__container">
         <h1>Về mình</h1>
-        <div class="about__data">
-          <ul>
-            <p>
-              Mình là sinh viên ngành Mạng máy tính & Truyền thông dữ liệu tại
-              Trường Đại học Kinh tế - Kỹ thuật Công nghiệp.
-            </p>
-            <p>
-              Mình yêu thích công nghệ và có đam mê với lập trình, tạo ra các đồ
-              dùng thông minh.
-            </p>
-            <h3>
-              Email:
-              <a href="mailto:ltkien.aug6@gmail.com">ltkien.aug6@gmail.com</a>
-            </h3>
-            <div class="about__icon">
-              <a href="https://github.com/ltkien68">
-                <img
-                  src="./assets/images/github_logo.png"
-                  alt="githublogo.png"
-                />
-              </a>
-              <a href="https://www.facebook.com/ltk6805">
-                <img src="./assets/images/fb_logo.png" alt="fblogo.png" />
-              </a>
-              <a></a>
-            </div>
-          </ul>
+        <div class="about__body">
+          <img
+            class="about__avatar"
+            src="./assets/images/lk_logo_white.png"
+            alt="logo_lk.png"
+          />
+          <div class="about__data">
+            <ul>
+              <p>
+                Mình thích xây dựng thứ có thể cảm nhận được thế giới — từ dòng
+                code chạy trên chip đến giao diện hiển thị trên màn hình.
+              </p>
+
+              <div class="personal-information">
+                <ul>
+                  <li><span style="color: var(--text-hovered);">Trường:</span class="color: var(--text-hovered)"> Trường đại học Kinh tế - Kỹ thuật Công nghiệp Hà Nội</li>
+                  <li><span style="color: var(--text-hovered);">Ngành học:</span class="color: var(--text-hovered)"> Mạng máy tính và truyền thông dữ liệu</li>
+                  <li><span style="color: var(--text-hovered);">Chuyên ngành:</span class="color: var(--text-hovered)"> Hệ thống nhúng và IoT</li>
+                </ul>
+
+                <ul>
+                  <li><span style="color: var(--text-hovered);">Định hướng:</span> IoT full-stack</li>
+                  <li><span style="color: var(--text-hovered);">Website:</span class="color: var(--text-hovered)"> <a href="https://ltkien-portfolio--68.vercel.app/" target="_blank">ltkien-portfolio--68.vercel.app</a></li>
+                  <li><span style="color: var(--text-hovered);">Email:</span class="color: var(--text-hovered)"> <a href="mailto:ltkien.aug6@gmail.com">ltkien.aug6@gmail.com</a></li>
+                </ul>
+              </div>
+
+              <p style="margin-top: 15px;"><span style="color: var(--text-hovered);">Mục tiêu:</span> Mình đang tìm vị trí <span style="color: var(--text-hovered);">thực tập IoT / Embedded</span></p>
+
+              <div class="about__icon">
+                <a href="https://github.com/ltkien68">
+                  <img
+                    src="./assets/images/github_logo.png"
+                    alt="githublogo.png"
+                  />
+                </a>
+                <a href="https://www.facebook.com/ltk6805">
+                  <img src="./assets/images/fb_logo.png" alt="fblogo.png" />
+                </a>
+                <a></a>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -101,10 +137,7 @@
 
         <div class="skill__description">
           Là một sinh viên định hướng phát triển trong lĩnh vực hệ thống nhúng &
-          iot, mình có nền tảng lập trình với C++ và Java. Đã thực hiện các dự
-          án web sử dụng ReactJS, Node.js, MongoDB và JSP/Servlet. Định hướng
-          phát triển trong lĩnh vực hệ thống nhúng và IoT, đang trong quá trình
-          mở rộng kiến thức về phần cứng và các giao thức liên quan.
+          iot, mình có nền tảng lập trình với C / C++ và Python.
         </div>
 
         <div class="skill__tools">

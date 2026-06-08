@@ -179,3 +179,48 @@ table {
   font-family: "Darley";
   src: url("../fonts/Darley/DarleySans-Regular.otf");
 }
+
+@font-face {
+  font-family: "Daytonica";
+  src: url("../fonts/Daytonica/MJ-VIP-Daytonica.ttf");
+}
+
+@font-face {
+  font-family: "Comforter";
+  src: url("../fonts/Comforter/Comforter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fluggles";
+  src: url("../fonts/Fuggles/Fuggles-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Archaic";
+  src: url("../fonts/Archaic/SVN-Archaic-1897.ttf");
+}
+
+@font-face {
+  font-family: "ArcOSD";
+  src: url("../fonts/ArcOSD/vhsfonf-1.ttf");
+}
+
+@font-face {
+  font-family: "Vantom";
+  src: url("../fonts/Vantom/SVN-Vantom.otf");
+}
+
+@font-face {
+  font-family: "Gloria";
+  src: url("../fonts/Gloria/SVN-Gloria-Hallelujah.otf");
+}
+
+@font-face {
+  font-family: "Pincoya";
+  src: url("../fonts/Pincoya/0199-LNTH-pincoyablack.ttf");
+}
+
+@font-face {
+  font-family: "Tallings";
+  src: url("../fonts/Tallings/1FTV-Tallingsvfc.ttf");
+}

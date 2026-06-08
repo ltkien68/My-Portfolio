@@ -32,13 +32,12 @@
 .hero__text {
   position: absolute;
   display: flex;
-  top: 0;
+  top: 20%;
   left: 0;
   width: 100%;
   height: 100%;
 
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 
@@ -47,13 +46,31 @@
 
 .hero__text p {
   color: var(--text-heading);
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   line-height: var(--h1-line-height);
+  font-family: "Gloria";
+}
+.hero__text-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.hero__text-header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__text-header ul li {
+  font-family: "ArcOSD";
+  text-transform: uppercase;
 }
 
 .hero__text h1 {
-  font-size: 90px;
-  font-family: var(--font-heading);
+  font-size: 160px;
+  font-family: "Tallings";
   line-height: 1.3;
 
   background: linear-gradient(to right, hsl(200, 96%, 51%), hsl(0, 0%, 100%));
@@ -62,6 +79,27 @@
   -webkit-text-fill-color: transparent;
 
   letter-spacing: -2px;
+}
+
+.header__button {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.header__button a {
+  border: 1px solid var(--text-hovered);
+  border-radius: 18px;
+  padding: 5px 30px;
+  color: var(--text-heading);
+
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.header__button a:hover {
+  color: var(--text-hovered);
 }
 
 @keyframes blink {

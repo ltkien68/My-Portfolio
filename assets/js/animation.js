@@ -20,7 +20,7 @@ elements.forEach((el) => observer.observe(el));
 
 /*  hieu ung danh may  */
 
-const text = "Lê Trung Kiên";
+const text = "LÊ TRUNG KIÊN";
 let i = 0;
 
 function typeWriter() {

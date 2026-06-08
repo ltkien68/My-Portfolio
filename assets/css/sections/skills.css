@@ -12,8 +12,21 @@
 .skill__container h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
+  font-family: "ArcOSD";
 
   color: var(--text-heading);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skill__container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--text-hovered);
 }
 
 .skill__description {
