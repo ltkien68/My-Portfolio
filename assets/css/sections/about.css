@@ -28,6 +28,7 @@
 
 .about__body img {
   width: 20%;
+  height: auto;
 }
 
 .about__container h1 {
